@@ -1,0 +1,59 @@
+﻿<style>
+     .logo:hover {
+ -ms-transform: scale(1.15); 
+ -webkit-transform: scale(1.15); 
+  transform: scale(1.15); 
+ transition: transform 0.6s ease;
+ }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Proje</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Proje.styles.css" asp-append-version="true" />
+</head>
+<body>
+<header style="background-color: #242526; text-align: center;">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
+        <div class="container-fluid" style="background-color: #242526; display: flex; align-items: center;">
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-md-center" style="text-align: center;">
+                <ul class="navbar-nav d-flex align-items-center" style="font-weight: bold;">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" style="margin-right: 15px;" asp-area="" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" style="margin-right: 15px;" asp-area="" asp-controller="Home" asp-action="Players">Oyuncular</a>
+                    </li>
+                <li>
+                    <a class="nav-link text-white" style="margin-right: 15px;" asp-area="" asp-controller="Home" asp-action="Index">
+                        <img class="logo"src="~/images/logo.png" alt="Açıklama" style="width: 100px; height: 87px; margin-right: 30px;" />
+                    </a>
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" style="margin-right: 15px;" asp-area="" asp-controller="Home" asp-action="Achievements">Başarılar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

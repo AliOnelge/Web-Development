@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .contact-container {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        background: #333;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .feedback-section h2, .feedback-section p {
+        margin: 10px 0;
+    }
+
+    form input, form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        background: #222;
+        color: white;
+    }
+
+    form button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: #444;
+        color: white;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+        form button:hover {
+            background: #555;
+        }
+
+    body {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        margin: 0;
+        padding: 0;
+    }
+
+    #backgroundVideo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100; 
+        object-fit: cover; 
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .description {
+        font-size: large;
+    }
+</style>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="~/images/backgroundVideo.mp4" type="video/mp4">
+    </video>
+</body>
+<div class="contact-wrapper">
+
+    <div class="contact-container">
+        <h1>CONTACT</h1>
+        <div class="feedback-section">
+            <h2>FEEDBACK</h2>
+            <p>Geri bildiriminizi, sorularınızı veya önerilerinizi göndermek için bu formu kullanın. Sizinle en kısa sürede iletişime geçebilmemiz için lütfen adınızı, e-posta adresinizi ve mesajınızın konusunu ekleyin.</p>
+            <p>Contact: <a href="mailto:contact@spacesoldiers.gg">contact@spacesoldiers.gg</a></p>
+            <p>Business: <a href="mailto:sponsorship@spacesoldiers.gg">sponsorship@spacesoldiers.gg</a></p>
+        </div>
+        <form>
+            <input type="text" name="Name" placeholder="Ad" required />
+            <input type="text" name="Subject" placeholder="Konu" required />
+            <input type="email" name="Email" placeholder="E-mail" required />
+            <textarea name="Message" placeholder="Mesaj..." required></textarea>
+            <button type="submit" style="background-color:#9d8f6c">GÖNDER</button>
+        </form>
+        <p>Space Soldiers olarak Türkiye'ye ve dünyaya yeni bir soluk getirmeyi hedefleyerek bu yolculuğumuzun ilk adımını sizlerle birlikte atıyoruz . Bu yolda tek hedefimiz var; zafer!</p>
+    </div>
+</div>

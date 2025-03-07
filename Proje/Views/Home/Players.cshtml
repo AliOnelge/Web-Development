@@ -1,0 +1,168 @@
+﻿@{
+    ViewBag.Title = "Oyuncular";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .player-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 350px;
+    }
+
+    .player-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .player-image {
+        width: 100%;
+        / height: auto;
+        margin-bottom: 20px;
+    }
+
+    h2, h3, h4, p {
+        margin: 10px 0;
+    }
+
+    .player-info {
+        text-align: center;
+    }
+
+    body {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+    }
+
+    table {
+        width: calc(100% - 20px);
+        table-layout: fixed;
+        margin: 0 auto;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    .player-card:hover {
+        -ms-transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+        transition: transform 0.6s ease;
+    }
+
+    #backgroundVideo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        object-fit: cover;
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+</style>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="~/images/backgroundVideo.mp4" type="video/mp4">
+    </video>
+</body>
+<table>
+    <tr>
+        <td colspan="4">
+            <div class="player-card">
+                <div class="player-content">
+                    <img src="~/images/players/paz.png" alt="Paz" class="player-image" />
+                    <div class="player-info">
+                        <h4>Rifler</h4>
+                        <h2>paz</h2>
+                        <h3>Ahmet Karahoca</h3>
+                        <p>
+                            Mesafe tanımayan atış kontrolü ve rakip düşürme potansiyeli rakiplerini korkutuyor. Doğuştan gelen soğukkanlığı sayesinde genç yaşına rağmen takımın “Clutch masterı” olarak adından söz ettiriyor. Sprey kontrolünü görenler geleceğin yıldızına baktığını anlıyor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </td>
+        <td colspan="4">
+            <div class="player-card">
+                <div class="player-content">
+                    <img src="~/images/players/ngin.png" alt="Paz" class="player-image" />
+                    <div class="player-info">
+                        <h4>Lurker</h4>
+                        <h2>ngiN</h2>
+                        <h3>Engin Kor</h3>
+                        <p>
+                            Takıma verdiği pozitif enerjisiyle, tam bir joker gibidir. Şakalarıyla takımın moralini yüksek tutmasının yanında, bir çok farklı rolü üstlenebilmesi onu diğer oyunculardan ayırır. “Lurker” olarak da, “support” olarak da oynayabilmesi, AWP’de Rifle’da kullanabilmesi, takıma çok büyük taktiksel esneklik sağlar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </td>
+        <td colspan="4">
+            <div class="player-card">
+                <div class="player-content">
+                    <img src="~/images/players/maj3r.png" alt="Paz" class="player-image" />
+                    <div class="player-info">
+                        <h4>In-Game Leader</h4>
+                        <h2>MAJ3R</h2>
+                        <h3>Engin Küpeli</h3>
+                        <p>
+                            CS 1.6 efsane oyuncularından olan MAJ3R, uzun yillar boyunca kazandığı tecrübeleri ile takımın liderliğini üstleniyor. En zor anlarda takımı için elini taşın altına sokmaktan çekinmiyor. Oyunun her köşesine hakim. Yüksek “frag” kapasitesine sahip ender “in-game leader”lardan bir tanesi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td colspan="4">
+            <div class="player-card">
+                <div class="player-content">
+                    <img src="~/images/players/xantares.png" alt="Paz" class="player-image" />
+                    <div class="player-info">
+                        <h4>Rifler</h4>
+                        <h2>XANTARES</h2>
+                        <h3>Can Dörtkardeş</h3>
+                        <p>
+                            Frag yeteneği ve reaksiyon hızı CS:GO oynayan herkes tarafından takdirle karşılanıyor. Round kazandıracak kişisel taktikler üretmede hiç zorlanmıyor. Bir makine gibi üstün performansını her maça yayabiliyor. Sıradışı yeteneğine güvenmeyip çok çalışması onu HLTV.org en iyi oyuncular listesinde zirvede tutuyor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </td>
+        <td colspan="4">
+            <div class="player-card">
+                <div class="player-content">
+                    <img src="~/images/players/calyx.png" alt="Paz" class="player-image" />
+                    <div class="player-info">
+                        <h4>Rifler</h4>
+                        <h2>Calyx</h2>
+                        <h3>Buğra Akın</h3>
+                        <p>
+                            2016 TWC turnuvası, şampiyon Türkiye Milli takımı’nın kaptanı. Sahip olduğu ekstra refleksleri sayesinde takımın AWP oyuncusu her an sorumluluk almaya hazır bekler. En stresli anlarda bile soğukanlılığını koruyabilmesi sayesinde taktiksel disiplini oyununa yansır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </td>
+        <td colspan="2">
+        </td>
+    </tr>
+</table>

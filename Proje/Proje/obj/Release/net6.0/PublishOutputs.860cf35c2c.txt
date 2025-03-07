@@ -1,0 +1,7 @@
+C:\Users\doguk\OneDrive\Masaüstü\Proje\Proje\obj\Release\net6.0\PubTmp\Out\Proje.exe
+C:\Users\doguk\OneDrive\Masaüstü\Proje\Proje\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\doguk\OneDrive\Masaüstü\Proje\Proje\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\doguk\OneDrive\Masaüstü\Proje\Proje\obj\Release\net6.0\PubTmp\Out\Proje.dll
+C:\Users\doguk\OneDrive\Masaüstü\Proje\Proje\obj\Release\net6.0\PubTmp\Out\Proje.deps.json
+C:\Users\doguk\OneDrive\Masaüstü\Proje\Proje\obj\Release\net6.0\PubTmp\Out\Proje.runtimeconfig.json
+C:\Users\doguk\OneDrive\Masaüstü\Proje\Proje\obj\Release\net6.0\PubTmp\Out\Proje.pdb
